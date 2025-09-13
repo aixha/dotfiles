@@ -1,0 +1,227 @@
+# alacritty.toml
+# Optimierte und fehlerfreie Konfiguration
+# man 5 alacritty (>0.13) für vollständige Konfigurationsdokumentation
+
+################################
+[env]
+TERM = "xterm-256color"
+
+[shell]
+program = "/bin/fish"
+args = ["-l"]
+
+[window]
+dimensions = { columns = 120, lines = 30 }
+padding = { x = 8, y = 8 }
+#decorations = "Full"
+opacity = 0.9
+
+[scrolling]
+history = 65535
+multiplier = 4
+
+
+################################
+### Colortheme
+[colors]
+draw_bold_text_with_bright_colors = true
+
+[colors.primary]
+background = "#1d1f21"
+foreground = "#c5c8c6"
+
+[colors.normal]
+black   = "#282a2e"
+red     = "#a54242"
+green   = "#8c9440"
+yellow  = "#de935f"
+blue    = "#5f819d"
+magenta = "#85678f"
+cyan    = "#5e8d87"
+white   = "#707880"
+
+[colors.bright]
+black   = "#373b41"
+red     = "#cc6666"
+green   = "#b5bd68"
+yellow  = "#f0c674"
+blue    = "#81a2be"
+magenta = "#b294bb"
+cyan    = "#8abeb7"
+white   = "#c5c8c6"
+
+
+################################
+### Font
+[font]
+size = 14.0
+
+[font.normal]
+family = "JetBrainsMono Nerd Font Mono"
+style = "Regular"
+
+[font.bold]
+family = "JetBrainsMono Nerd Font Mono"
+style = "Bold"
+
+[font.italic]
+family = "JetBrainsMono Nerd Font Mono"
+style = "Italic"
+
+[font.bold_italic]
+family = "JetBrainsMono Nerd Font Mono"
+style = "Bold Italic"
+
+[font.offset]
+x = 0
+y = 0
+
+[font.glyph_offset]
+x = 0
+y = 0
+
+
+################################
+### Clipboard
+[selection]
+save_to_clipboard = true
+semantic_escape_chars = ",│`|:\"' ()[]{}<>"
+
+
+################################
+### Mouse
+[mouse]
+hide_when_typing = true
+
+[[mouse.bindings]]
+mouse = "Right"
+action = "PasteSelection"
+
+[[mouse.bindings]]
+mouse = "Middle"
+action = "ToggleMaximized"
+
+[[mouse.bindings]]
+mouse = "Back"
+action = "Paste"
+
+[[mouse.bindings]]
+mouse = "Forward"
+action = "CreateNewWindow"
+
+
+################################
+### Keyboard
+
+# Alacritty-spezifische Aktionen
+[[keyboard.bindings]]
+key = "N"
+mods = "Command"
+action = "SpawnNewInstance"
+
+[[keyboard.bindings]]
+key = "W"
+mods = "Command|Shift" 
+action = "Quit"
+
+[[keyboard.bindings]]
+key = "Back"
+action = "ReceiveChar"
+
+# Terminal-Navigation (tmux-kompatibel)
+[[keyboard.bindings]]
+key = "Left"
+mods = "Alt"
+chars = "\u001bb"
+
+[[keyboard.bindings]]
+key = "Right" 
+mods = "Alt"
+chars = "\u001bf"
+
+[[keyboard.bindings]]
+key = "Left"
+mods = "Command"
+chars = "\u0001"
+
+[[keyboard.bindings]]
+key = "Right"
+mods = "Command"
+chars = "\u0005"
+
+[[keyboard.bindings]]
+key = "Back"
+mods = "Command"
+chars = "\u0015"
+
+[[keyboard.bindings]]
+key = "Back"
+mods = "Alt"
+chars = "\u001b\u007f"
+
+# tmux Session-Management
+[[keyboard.bindings]]
+key = "T"
+mods = "Command"
+chars = "\u001cc"
+
+[[keyboard.bindings]]
+key = "W"
+mods = "Command"
+chars = "\u001c&"
+
+[[keyboard.bindings]]
+key = "LBracket"
+mods = "Command|Shift"
+chars = "\u001cp"
+
+[[keyboard.bindings]]
+key = "RBracket"
+mods = "Command|Shift"
+chars = "\u001cn"
+
+# tmux Window-Navigation (Cmd+1-9)
+[[keyboard.bindings]]
+key = "Key1"
+mods = "Command"
+chars = "\u001c1"
+
+[[keyboard.bindings]]
+key = "Key2"
+mods = "Command"
+chars = "\u001c2"
+
+[[keyboard.bindings]]
+key = "Key3"
+mods = "Command"
+chars = "\u001c3"
+
+[[keyboard.bindings]]
+key = "Key4"
+mods = "Command"
+chars = "\u001c4"
+
+[[keyboard.bindings]]
+key = "Key5"
+mods = "Command"
+chars = "\u001c5"
+
+[[keyboard.bindings]]
+key = "Key6"
+mods = "Command"
+chars = "\u001c6"
+
+[[keyboard.bindings]]
+key = "Key7"
+mods = "Command"
+chars = "\u001c7"
+
+[[keyboard.bindings]]
+key = "Key8"
+mods = "Command"
+chars = "\u001c8"
+
+[[keyboard.bindings]]
+key = "Key9"
+mods = "Command"
+chars = "\u001c9"
