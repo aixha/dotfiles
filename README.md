@@ -1,4 +1,4 @@
-# .dotfiles
+# dotfiles
 
 A short description of your project goes here.
 
