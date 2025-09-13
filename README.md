@@ -1,4 +1,4 @@
-# Project Title
+# dotfiles
 
 A short description of your project goes here.
 
