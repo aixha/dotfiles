@@ -2,13 +2,13 @@
 
 A short description of your project goes here.
 
-## 🚀 Features
+## Features
 
 - Feature 1
 - Feature 2
 - Feature 3
 
-## 🛠️ Installation
+## Installation
 
 Clone the repository:
 
