@@ -14,4 +14,3 @@ Clone the repository:
 
 ```bash
 git clone https://github.com/aixha/dotfiles.git
-cd dotfiles
