@@ -1,5 +1,5 @@
 
-Alacritty Configuration
+## Alacritty Configuration
 
 
 Alacritty doesn't create the config file for you, but it looks for one in the following locations on UNIX systems:
