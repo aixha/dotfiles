@@ -1,15 +1,6 @@
 
-Alacritty Logo lacritty
-Configuration Changelog
+Alacritty Configuration
 
-Version:
-NAME
-
-Alacritty - TOML configuration file format.
-SYNTAX
-
-Alacritty's configuration file uses the TOML format. The format's specification can be found at https://toml.io/en/v1.0.0.
-LOCATION
 
 Alacritty doesn't create the config file for you, but it looks for one in the following locations on UNIX systems:
 
